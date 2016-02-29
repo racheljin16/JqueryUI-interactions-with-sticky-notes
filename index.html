@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/vader/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"></script>
+	<script src="js/interaction.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<title>Organize Your Expenses</title>
+</head>
+<body>
+	<header>
+		<h1>Organize Your Expenses!</h1>
+		<p class="intro">Play with your <span class="intro-highlight">sticky notes</span></p>
+	</header>
+
+	<div class="board">
+		<h2>Place notes on the spots</h2>
+		<div class="container">
+			<div class="jumbotron">
+				<div class="row clearfix">
+					<div class="col-lg-2 col-lg-offset-1 board-sidebar">
+						<img class="note-img" id="note1" src="images/drill_89.png">
+						<img class="note-img" id="note2" src="images/eggs_9.png">
+						<img class="note-img" id="note3" src="images/flowers_3.png">
+						<img class="note-img" id="note4" src="images/rods_20.png">
+						<img class="note-img" id="note5" src="images/shrimps_7.png">
+						<img class="note-img" id="note6" src="images/battery_5.png">
+					</div>
+					<div class="col-lg-9 board-main">
+						<img id="board-img" src="images/notes-01.png">
+						<p class="spot" id="spot1"></p>
+						<p class="spot" id="spot2"></p>
+						<p class="spot" id="spot3"></p>
+						<p class="spot" id="spot4"></p>
+						<p class="spot" id="spot5"></p>
+						<p class="spot" id="spot6"></p>
+					</div>	
+				</div>
+				<div class="row">
+					<p class="mybtn" id="next1"><button class="btn col-lg-5 col-lg-offset-1 btn-default mybtn1" id="next-btn1" >Next</button></p>
+					<p class="mybtn" id="reset1"><button class="btn col-lg-5 col-lg-offset-1 btn-default mybtn2">Reset</button></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="list">
+		<h2>Sort your notes by category</h2>
+		<div class="container">
+			<div style="background: none" class="jumbotron">
+				<div class="row" id="category-items">
+					<div class="home-depot col-lg-4">
+						<h3>Home Depot</h3>
+						<div id="home-depot">
+							<img class="sort-post" id="sort-post1"></img>
+							<img class="sort-post" id="sort-post2"></img>
+							<img class="sort-post" id="sort-post3"></img>
+						</div>
+					</div>
+					<div class="farmers-market col-lg-4 col-lg-offset-4">
+						<h3>Farmers Market</h3>
+						<div id="farmers-market">
+							<img class="sort-post" id="sort-post4"></img>
+							<img class="sort-post" id="sort-post5"></img>
+							<img class="sort-post" id="sort-post6"></img>
+						</div>
+					</div>					
+				</div>
+
+				<div>
+					<p class="mybtn" id="next2"><button id="next-btn2" class="btn btn-default mybtn1">Next</button></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="result">
+		<div class="jumbotron">
+			<div class="container">
+				<h2>Your expense for this week</h2>
+				<p>Home Depot: <span class="number" id="hd-number"></span></p>
+				<p>Farmers Market: <span class="number" id="fm-number"></span></p>
+				<p>Total Expense: <span class="number" id="total-number"></span></p>
+				<p class="mybtn"><button id="reset-all" class="btn btn-default mybtn1">Reset all</button></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
